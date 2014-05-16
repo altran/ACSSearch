@@ -5,6 +5,13 @@
     <artifactId>acssearch</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+    <parent>
+        <groupId>no.cantara.emi</groupId>
+        <artifactId>parent</artifactId>
+        <version>2</version>
+    </parent>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <solr.version>4.8.0</solr.version>
@@ -125,22 +132,10 @@
     </dependencies>
 
     <scm>
+        <developerConnection>scm:git:ssh://git@github.com:altran/ACSSearch.git</developerConnection>
         <connection>scm:git:https://github.com/altran/ACSSearch.git</connection>
+        <url>https://github.com/altran/ACSSearch.git</url>
     </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>nexus</id>
-            <name>Altran</name>
-            <url>http://mvnrepo.cantara.no/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus</id>
-            <name>Altran</name>
-            <url>http://mvnrepo.cantara.no/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
 
     <build>
         <plugins>
