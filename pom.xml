@@ -137,7 +137,7 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>Altran</name>
-            <url>http://mvnrepo.cantara.no/content/repositories/snapshots</url>
+            <url>http://mvnrepo.cantara.no/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
