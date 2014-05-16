@@ -131,13 +131,13 @@
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <name>NKK</name>
-            <url>http://ci.nkk.no/nexus/content/repositories/releases/</url>
+            <name>Altran</name>
+            <url>http://mvnrepo.cantara.no/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <name>NKK</name>
-            <url>http://ci.nkk.no/nexus/content/repositories/snapshots/</url>
+            <name>Altran</name>
+            <url>http://mvnrepo.cantara.no/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
