@@ -25,4 +25,4 @@ wget -O $JARFILE -q -N $url
 
 nohup java -jar $JARFILE &
 
-tail -f nohup.out
+#tail -f nohup.out
