@@ -1,0 +1,42 @@
+# HOW TO USE THIS FILE 
+#
+# This file should be copied to the same folder as schema.xml Solr-configuration.
+# E.g. /home/solr/solr/collection1/conf/
+# 
+# In schema.xml, add the following line after the tokenizer for fieldtype edge_ngram
+# <filter class="solr.SynonymFilterFactory" synonyms="acs_synonyms.txt" ignoreCase="true" expand="false"/> 
+
+
+# EXPLANATION
+#
+# Real synonyms
+#
+# If you want two (or more) search word to return the same results, add them to this file in this way:
+# word1 => word2
+#
+# Special character "synonyms"
+#
+# Special characters are ignored by default in Solr.
+# In order for Solr to recognize terms containing special characters, we define a list of terms and their "synonyms"
+# & (ampersands) are escaped in the Django template which renders the text-body of the Solr-index to prevent XSS attacks.
+# Therefore one must use &amp; in place of & when creating such synonyms.
+# E.g. R&D, R&amp;D => researchanddevelopment
+
+
+# REFERENCE
+#
+# http://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#solr.SynonymFilterFactory
+
+
+# Real synonyms
+
+
+
+
+# Special character "synonyms"
+
+C#, C#\, => csharp
+F#, F#\, => fsharp
+C+, C+\, => cplus
+C++, C++\, => cplusplus
+R&D, R&D\,, R&amp;D, R&amp;D\, => resanddev
