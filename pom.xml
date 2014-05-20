@@ -163,7 +163,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>AcsSearch</Main-Class>
+                            <Main-Class>no.altran.ACSSearch</Main-Class>
                         </manifestEntries>
                     </archive>
                 </configuration>

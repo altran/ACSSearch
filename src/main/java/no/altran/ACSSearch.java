@@ -16,7 +16,7 @@ import java.util.zip.ZipInputStream;
 public class ACSSearch {
 	public static final String TARGET = "./solr";
 	public static final String PREFIX = "/solr";
-	public static final int PORT_NO = 8678;
+	public static final int PORT_NO = 8983;
 
 	public static Logger logger = LoggerFactory.getLogger(ACSSearch.class);
 
@@ -75,9 +75,6 @@ public class ACSSearch {
 							}
 						}
 					}
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-					System.exit(1);
 				} catch (IOException e) {
 					e.printStackTrace();
 					System.exit(1);

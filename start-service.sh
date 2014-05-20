@@ -7,6 +7,6 @@ ENV_MODE=DEV
 
 pkill -f $A
 
-nohup java -DENV_CONFIG=$ENV_MODE -jar $JARFILE &
+nohup java -jar $JARFILE &
 
 #tail -f nohup.out
