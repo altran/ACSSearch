@@ -1,19 +1,19 @@
 #!/bin/bash
 #
-# acssearch		This shell script takes care of starting and stopping
-#		acssearch.
+# AcsSearch		This shell script takes care of starting and stopping
+#		AcsSearch.
 #
 # chkconfig: - 58 74
-# description: Dog Service SolR server
+# description: AcsSearch
 
 ### BEGIN INIT INFO
-# Provides: acssearch
+# Provides: AcsSearch
 # Required-Start: $network $local_fs $remote_fs
 # Required-Stop: $network $local_fs $remote_fs
 # Should-Start: $syslog $named
 # Should-Stop: $syslog $named
-# Short-Description: start and stop acssearch
-# Description: Dog Service
+# Short-Description: start and stop AcsSearch
+# Description: AcsSearch
 ### END INIT INFO
 
 # Source function library.
@@ -22,10 +22,10 @@
 # Source networking configuration.
 . /etc/sysconfig/network
 
-# Source acssearch configuration.
-[ -f /etc/sysconfig/acssearch ] && . /etc/sysconfig/acssearch
+# Source AcsSearch configuration.
+[ -f /etc/sysconfig/AcsSearch] && . /etc/sysconfig/AcsSearch
 
-prog=acssearch
+prog=AcsSearch
 lockfile=/var/lock/subsys/$prog
 pidfile=/var/run/acssearch.pid
 
@@ -39,7 +39,7 @@ start() {
 	# Start daemon.
 	echo -n $"Starting $prog: "
 	cd /opt/$prog || exit 3
-	daemon --user=acssearch "$executable $JAVAOPTS -jar $prog.jar >/dev/null 2>&1 &"
+	daemon --user=acs-search "$executable $JAVAOPTS -jar $prog.jar >/dev/null 2>&1 &"
 	RETVAL=$?
 	echo
 	[ $RETVAL -eq 0 ] && touch $lockfile
