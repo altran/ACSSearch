@@ -13,7 +13,7 @@ repo="content/repositories/snapshots/com/altran"
 # Maven artifact location
 name=$A-$V
 path="$server/$repo/$A"
-version=`curl -s "$path/maven-metadata.xml" | grep "<version>" | sed "s/.*<version>\([^<]*\)<\/version>.*/\1/"`
+version=`curl -s "$path/maven-metadata.xml" | grep "<version>" | sed "s/.*<version>\([^<]*\)<\/version>.*/\1/" | tail -n 1`
 echo "Version $version"
 build=`curl -s "$path/$version/maven-metadata.xml" | grep '<value>' | head -1 | sed "s/.*<value>\([^<]*\)<\/value>.*/\1/"`
 jar="$A-$build.jar"
