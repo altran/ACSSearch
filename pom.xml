@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.altran</groupId>
     <artifactId>AcsSearch</artifactId>
-    <version>0.0.1</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -134,7 +134,7 @@
         <developerConnection>scm:git:ssh://git@github.com/altran/ACSSearch.git</developerConnection>
         <connection>scm:git:https://github.com/altran/ACSSearch.git</connection>
         <url>https://github.com/altran/ACSSearch.git</url>
-      <tag>AcsSearch-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <repositories>
