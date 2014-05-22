@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.altran</groupId>
     <artifactId>AcsSearch</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -132,10 +131,11 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com:altran/ACSSearch.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/altran/ACSSearch.git</developerConnection>
         <connection>scm:git:https://github.com/altran/ACSSearch.git</connection>
         <url>https://github.com/altran/ACSSearch.git</url>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
 
     <repositories>
         <!-- Needed for parent  -->
@@ -221,8 +221,7 @@
                                 </filter>
                             </filters>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                             </transformers>
                         </configuration>
                     </execution>
