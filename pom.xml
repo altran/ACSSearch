@@ -132,7 +132,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com:altran/ACSSearch.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/altran/ACSSearch.git</developerConnection>
         <connection>scm:git:https://github.com/altran/ACSSearch.git</connection>
         <url>https://github.com/altran/ACSSearch.git</url>
     </scm>
